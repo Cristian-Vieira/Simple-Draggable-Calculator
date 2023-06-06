@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Adiciona uma meta tag para garantir que a página seja exibida corretamente em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <!-- Título da página -->
+    <title>calculadora</title>
+    <link rel="stylesheet" href="./styles/mainStyle.css">
+</head>
+
+
+<body>
+
+    <button id="open-modal1-button" class="sticky">Abrir Calculadora</button>
+
+    <div id="my-modal1" class="modal1">
+        <div class="modal1-content">
+            <span class="close-button">&times;</span>
+            <p>
+                <!-- Este é o conteúdo da calculadora -->
+                <div id="mydiv" class="boxshadow">
+                    <!-- Div com o cabeçalho para ser arrastada -->
+                    <div id="mydivheader">Arraste para mover</div>
+                    <!-- Título da calculadora -->
+                    <h1>Calculadora</h1>
+                    <!-- Campo de entrada para exibir o resultado -->
+                    <input type="text" id="result" class="display">
+                    <br><br>
+                    <!-- Botões da calculadora -->
+                    <input type="button" value="1" onclick="document.getElementById('result').value+='1'">
+                    <input type="button" value="2" onclick="document.getElementById('result').value+='2'">
+                    <input type="button" value="3" onclick="document.getElementById('result').value+='3'">
+                    <input type="button" value="C" onclick="document.getElementById('result').value=''">
+                    <br>
+                    <input type="button" value="4" onclick="document.getElementById('result').value+='4'">
+                    <input type="button" value="5" onclick="document.getElementById('result').value+='5'">
+                    <input type="button" value="6" onclick="document.getElementById('result').value+='6'">
+                    <input type="button" value="=" onclick="document.getElementById('result').value=eval(document.getElementById('result').value)">
+                    <br>
+                    <input type="button" value="7" onclick="document.getElementById('result').value+='7'">
+                    <input type="button" value="8" onclick="document.getElementById('result').value+='8'">
+                    <input type="button" value="9" onclick="document.getElementById('result').value+='9'">
+                    <input type="button" value="+" onclick="document.getElementById('result').value+='+'">
+                    <br>
+                    <input type="button" value="0" onclick="document.getElementById('result').value+='0'" style="margin: 7px">
+                    <input type="button" value="*" onclick="document.getElementById('result').value+='*'" style="margin: 4px; width: 31px">
+                    <input type="button" value="/" onclick="document.getElementById('result').value+='/'" style="margin: 4px; width: 31px">
+                    <input type="button" value="-" onclick="document.getElementById('result').value+='-'" style="margin: 7px; width: 31px"">
+                    <br>
+                </div>
+            </p>
+      </div>
+    </div>
+  </div>
+
+<script src="./scripts/mainScript.js"></script>
+</body>
+
+</html>
