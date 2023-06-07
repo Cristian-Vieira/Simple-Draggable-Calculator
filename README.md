@@ -13,8 +13,9 @@ view the project image:
 </p>
 
 ---
-
 ## Calculadora simples arrastavel
+
+Descrição em PT-BR:
 
 **Uma calculadora simples e arrastável feita usando HTML - CSS - JS**
 
