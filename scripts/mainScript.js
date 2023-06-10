@@ -1,4 +1,4 @@
-
+//Get Elements of DOM
 const openModalbutton = document.getElementById('open-modal1-button');
 const modal1 = document.getElementById('my-modal1');
 const closebutton = document.querySelector('.close-button');
@@ -28,9 +28,6 @@ function dragElement(elmnt) {
     if (document.getElementById(elmnt.id + "header")) {
         // Se houver, usa o cabeçalho como referência para o arraste
         document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-    } else {
-        // Se não houver cabeçalho, qualquer parte do DIV pode ser usada para arrastá-lo
-        elmnt.onmousedown = dragMouseDown;
     }
 
     // Função chamada quando o usuário clica e segura o cabeçalho ou a área dentro do DIV
