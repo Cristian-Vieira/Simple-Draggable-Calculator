@@ -1,85 +1,53 @@
 /* Define a aparência do body da página */
 body {
     margin: 10px;
-    /* Adiciona margem */
     padding: 0px;
-    /* Remove o padding */
     background-color: white;
-    /* Cor de fundo branca */
     color: black;
-    /* Cor do texto preta */
     font-size: 25px;
-    /* Tamanho da fonte */
 }
 
-/* Estilo para o elemento h1 */
 h1 {
     color: red;
-    /* Cor vermelha */
     text-align: center;
-    /* Alinhamento central */
     font: 80;
-    /* Tamanho da fonte */
+    margin: 10px;
 }
 
-/* Estilo para o elemento h2 */
 h2 {
     color: black;
-    /* Cor preta */
     text-align: center;
-    /* Alinhamento central */
     font-size: 30;
-    /* Tamanho da fonte */
+
 }
 
-/* Estilo para o elemento com id "mydiv" */
 #mydiv {
     position: absolute;
-    /* Posição absoluta */
     z-index: 9;
-    /* Posição no eixo z */
     background-color: #f1f1f1;
-    /* Cor de fundo */
     text-align: center;
-    /* Alinhamento central */
     border: 1px solid #d3d3d3;
-    /* Adiciona uma borda */
     width: 300px;
+    border-radius: 10px;
 }
 
-/* Estilo para o elemento com id "mydivheader" */
 #mydivheader {
     padding: 10px;
-    /* Adiciona padding */
     cursor: move;
-    /* Cursor de movimento */
     z-index: 10;
-    /* Posição no eixo z */
     background-color: #04AA6D;
-    /* Cor de fundo */
     color: #fff;
-    /* Cor branca */
+    border-radius: 5px;
 }
 
-/* Estilo para a classe "boxshadow" */
 .boxshadow {
-    text-align: center;
-    /* Alinhamento central */
-    border: 1px solid #333;
-    /* Adiciona uma borda */
     box-shadow: 8px 8px 5px #444;
-    /* Adiciona sombra */
     padding: 8px 12px;
-    /* Adiciona padding */
     background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
-    /* Adiciona um gradiente de cor de fundo */
 }
 
-/* Estilo para o elemento button */
 button {
-    /* Cor verde */ 
     background-color: #04AA6D;
-    /* Cor de fundo */
     color: white;
     border: none;
     cursor: pointer;
@@ -89,13 +57,9 @@ button {
     margin: 5px;
 }
 
-
 input[type=button] {
     size: 30;
-    /* Tamanho */
-    /* Cor verde */
     background-color: #04AA6D;
-    /* Cor de fundo */
     color: white;
     font-size: 20px;
     padding: 10px;
@@ -103,19 +67,15 @@ input[type=button] {
     border: none;
     cursor: pointer;
     text-align: center
-
 }
-
 
 .display {
     font-size: 25px !important;
-    padding: 2px;
+    padding: 1px;
     text-align: right;
     width: 65%;
     height: 30px;
 }
-
-
 
 .modal1 {
     display: none;
@@ -134,10 +94,11 @@ input[type=button] {
 }
 
 .close-button {
-    color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
+    color: red;
+    padding-right: 10px;
 }
 
 .close-button:hover,
@@ -150,11 +111,17 @@ input[type=button] {
 button.sticky {
     position: sticky;
     top: 0;
-
 }
 
-#result{
+#result {
     font-size: 25pt;
     text-align: center;
 }
 
+#open-modal1-button{
+    border-radius: 10px;
+}
+
+.number{
+    border-radius: 4px;
+}
