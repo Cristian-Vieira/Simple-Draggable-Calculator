@@ -98,7 +98,7 @@ input[type=button] {
     font-size: 40px;
     font-weight: bold;
     color: red;
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 .close-button:hover,
