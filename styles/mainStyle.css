@@ -57,6 +57,24 @@ button {
     margin: 5px;
 }
 
+#centralizador {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botaoOpen {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
 input[type=button] {
     size: 30;
     background-color: #04AA6D;
@@ -70,11 +88,7 @@ input[type=button] {
 }
 
 .display {
-    font-size: 25px !important;
-    padding: 1px;
-    text-align: right;
-    width: 65%;
-    height: 30px;
+    width: 75%;
 }
 
 .modal1 {
@@ -114,14 +128,22 @@ button.sticky {
 }
 
 #result {
-    font-size: 25pt;
+    font-size: 20px;
     text-align: center;
+    padding: 5px;
+    margin: 0 0 15px;
 }
 
-#open-modal1-button{
+#open-modal1-button {
     border-radius: 10px;
 }
 
-.number{
+.number {
     border-radius: 4px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 2.4em 2.4em 2.4em 2.4em;
+    justify-content: center;
 }

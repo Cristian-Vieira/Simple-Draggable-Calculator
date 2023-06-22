@@ -12,50 +12,63 @@
 
 
 <body>
-
-    <button type="button" id="open-modal1-button" class="sticky">Abrir Calculadora</button>
+    <div class="botaoOpen"><button type="button" id="open-modal1-button" class="sticky">Abrir Calculadora</button></div>
+    
 
     <div id="my-modal1" class="modal1">
         <div class="modal1-content">
             <p>
                 <!--Conteúdo da calculadora -->
-            <div id="mydiv" class="boxshadow">
-                <!-- Div com o cabeçalho para ser arrastada -->
-                <span class="close-button">&times;</span>
-                <div id="mydivheader">Arraste para mover</div>
-                <!-- Título da calculadora -->
-                <h1>Calculadora</h1>
-                <!-- Campo de entrada para exibir o resultado -->
-                <input type="text" id="result" class="display">
-                <br><br>
-                <!-- Botões da calculadora -->
-                <input type="button" value="1" class='number' onclick="document.getElementById('result').value+='1'">
-                <input type="button" value="2" class='number' onclick="document.getElementById('result').value+='2'">
-                <input type="button" value="3" class='number' onclick="document.getElementById('result').value+='3'">
-                <input type="button" value="C" class='number' onclick="document.getElementById('result').value=''">
-                <br>
-                <input type="button" value="4" class='number' onclick="document.getElementById('result').value+='4'">
-                <input type="button" value="5" class='number' onclick="document.getElementById('result').value+='5'">
-                <input type="button" value="6" class='number' onclick="document.getElementById('result').value+='6'">
-                <input type="button" value="=" class='number' onclick="document.getElementById('result').value=eval(document.getElementById('result').value)">
-                <br>
-                <input type="button" value="7" class='number' onclick="document.getElementById('result').value+='7'">
-                <input type="button" value="8" class='number' onclick="document.getElementById('result').value+='8'">
-                <input type="button" value="9" class='number' onclick="document.getElementById('result').value+='9'">
-                <input type="button" value="+" class='number' onclick="document.getElementById('result').value+='+'">
-                <br>
-                <input type="button" value="0" class='number' onclick="document.getElementById('result').value+='0'" style="margin: 7px">
-                <input type="button" value="*" class='number' onclick="document.getElementById('result').value+='*'" style="margin: 4px; width: 31px">
-                <input type="button" value="/" class='number' onclick="document.getElementById('result').value+='/'" style="margin: 4px; width: 31px">
-                <input type="button" value="-" class='number' onclick="document.getElementById('result').value+='-'" style="margin: 7px; width: 31px">
-                <br>
-            </div>
+                <div id="centralizador">    
+                    <div id="mydiv" class="boxshadow">
+                        <!-- Div com o cabeçalho para ser arrastada -->
+                        <span class="close-button">&times;</span>
+                        <div id="mydivheader">Arraste para mover</div>
+                        <!-- Título da calculadora -->
+                        <h1>Calculadora</h1>
+                        <!-- Campo de entrada para exibir o resultado -->
+                        <input type="text" id="result" class="display">
+                      
+                        <!-- Botões da calculadora -->
+                        <div class="grid">
+                            <input type="button" value="1" class='number' onclick="document.getElementById('result').value+='1'">
+                            <input type="button" value="2" class='number' onclick="document.getElementById('result').value+='2'">
+                            <input type="button" value="3" class='number' onclick="document.getElementById('result').value+='3'">
+                            <input type="button" value="C" class='number' onclick="document.getElementById('result').value=''">
+                        </div>
+                 
+                        <div class="grid">
+                            <input type="button" value="4" class='number' onclick="document.getElementById('result').value+='4'">
+                            <input type="button" value="5" class='number' onclick="document.getElementById('result').value+='5'">
+                            <input type="button" value="6" class='number' onclick="document.getElementById('result').value+='6'">
+                            <input type="button" value="=" class='number' onclick="calcular()"> 
+                        </div>
+                        
+                        
+                        <div class="grid">
+                            <input type="button" value="7" class='number' onclick="document.getElementById('result').value+='7'">
+                            <input type="button" value="8" class='number' onclick="document.getElementById('result').value+='8'">
+                            <input type="button" value="9" class='number' onclick="document.getElementById('result').value+='9'">
+                            <input type="button" value="+" class='number' onclick="document.getElementById('result').value+='+'">
+                        </div>
+                      
+                       <div class="grid">
+                            <input type="button" value="0" class='number' onclick="document.getElementById('result').value+='0'">
+                            <input type="button" value="*" class='number' onclick="document.getElementById('result').value+='*'">
+                            <input type="button" value="/" class='number' onclick="document.getElementById('result').value+='/'">
+                            <input type="button" value="-" class='number' onclick="document.getElementById('result').value+='-'">
+                       </div>
+                        
+                    </div>
+                </div>
+       
             </p>
         </div>
     </div>
     </div>
-
-    <script src="./scripts/mainScript.js"></script>
+    
+    <script src="./scripts/calcular.js"></script>
+    <script src="./scripts/manipulaçãoDoModal.js"></script>
 </body>
 
 </html>
